@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hit Musique — Toute la musique, toute l'actualité !</title>
+<style>
+:root{--bg:#070b14;--panel:#101827;--line:#263246;--text:#f5f7fb;--muted:#aab5c7;--pink:#ff2457;--purple:#a855f7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{border-bottom:1px solid var(--line);background:#080d18;position:sticky;top:0;z-index:10}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 0;flex-wrap:wrap}
+.logo{font-size:1.5rem;font-weight:900;letter-spacing:-.5px}.logo span{color:var(--pink)}.tagline{font-size:.76rem;color:var(--muted);margin-top:-4px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:0 0 14px;font-size:.9rem;color:#d7deea}nav a:hover{color:var(--pink)}
+.search{padding:10px 12px;border:1px solid var(--line);border-radius:20px;background:#111a2a;color:white;max-width:260px;width:100%}
+main{padding:26px 0 48px}.eyebrow{color:var(--pink);font-size:.76rem;font-weight:bold;text-transform:uppercase;letter-spacing:1.5px}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;margin-bottom:24px}
+.hero-main,.card,.rankings,.category{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}
+.hero-art{min-height:220px;background:linear-gradient(125deg,#48132e,#111a35 60%,#5c1b4c);display:flex;align-items:center;justify-content:center;font-size:5rem}
+.hero-copy{padding:22px}.hero h1{font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.12;margin:8px 0 12px}.muted{color:var(--muted)}.button{display:inline-block;background:var(--pink);color:white;padding:11px 16px;border-radius:8px;font-weight:bold;margin-top:10px}
+.section-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:30px 0 14px}.section-title h2{margin:0;font-size:1.4rem}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.category{padding:16px;font-weight:bold}.category span{display:block;font-size:1.6rem;margin-bottom:7px}.category small{font-weight:normal;color:var(--muted)}
+.content{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;margin-top:25px}.articles{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{padding:0}.thumb{height:125px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;background:linear-gradient(135deg,#24224c,#711d49)}.card-copy{padding:15px}.card h3{font-size:1.05rem;line-height:1.3;margin:6px 0}.card p{font-size:.9rem;color:var(--muted);margin:8px 0}.pill{font-size:.7rem;color:#ff9db4;text-transform:uppercase;font-weight:bold}
+.rankings{padding:18px}.rankings h2{margin:0 0 12px}.rank{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}.rank:last-child{border:0}.number{font-size:1.2rem;font-weight:900;color:var(--pink);width:22px}.song{flex:1}.song strong{display:block}.song small{color:var(--muted)}.score{font-size:.8rem;color:var(--muted)}
+.notice{background:#111a2a;border:1px dashed #4b5870;color:var(--muted);padding:13px;border-radius:10px;font-size:.88rem;margin-top:24px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem}
+@media(max-width:760px){.hero,.content{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.articles{grid-template-columns:1fr}.hero-art{min-height:160px}nav{gap:12px}.search{max-width:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div><div class="logo">♫ HIT <span>MUSIQUE</span></div><div class="tagline">Toute la musique, toute l'actualité !</div></div>
+      <input id="search" class="search" type="search" placeholder="Rechercher une actualité…">
+    </div>
+    <nav><a href="#accueil">Accueil</a><a href="#actualites">Actualités</a><a href="#nouveautes">Nouveautés</a><a href="#videos">Vidéos</a><a href="#classements">Classements</a><a href="#genres">Genres</a></nav>
+  </div>
+</header>
+<main class="wrap" id="accueil">
+  <section class="hero">
+    <article class="hero-main">
+      <div class="hero-art" aria-label="Illustration musicale">🎤 🎶</div>
+      <div class="hero-copy"><div class="eyebrow">À la une · Exemple de maquette</div><h1>Bienvenue sur Hit Musique</h1><p class="muted">Les actualités, les artistes, les nouveaux sons et les tendances musicales d'Afrique et du monde entier, au même endroit.</p><a class="button" href="#actualites">Découvrir les actualités →</a></div>
+    </article>
+    <aside class="rankings" id="classements">
+      <h2>🔥 Top 5 — Maquette</h2>
+      <p class="muted" style="font-size:.85rem">Remplace ces exemples par un vrai classement vérifié.</p>
+      <div class="rank"><span class="number">1</span><div class="song"><strong>Titre à ajouter</strong><small>Nom de l'artiste</small></div><span class="score">—</span></div>
+      <div class="rank"><span class="number">2</span><div class="song"><strong>Titre à ajouter</strong><small>Nom de l'artiste</small></div><span class="score">—</span></div>
+      <div class="rank"><span class="number">3</span><div class="song"><strong>Titre à ajouter</strong><small>Nom de l'artiste</small></div><span class="score">—</span></div>
+      <div class="rank"><span class="number">4</span><div class="song"><strong>Titre à ajouter</strong><small>Nom de l'artiste</small></div><span class="score">—</span></div>
+      <div class="rank"><span class="number">5</span><div class="song"><strong>Titre à ajouter</strong><small>Nom de l'artiste</small></div><span class="score">—</span></div>
+    </aside>
+  </section>
+  <section id="genres">
+    <div class="section-title"><h2>Explorer la musique</h2></div>
+    <div class="categories">
+      <a class="category" href="#actualites"><span>🇨🇩</span>Musique congolaise<small>Rumba, ndombolo, gospel…</small></a>
+      <a class="category" href="#actualites"><span>🌍</span>Musique africaine<small>Afrobeats, amapiano…</small></a>
+      <a class="category" href="#actualites"><span>🎧</span>Musique internationale<small>Pop, rock, R&B…</small></a>
+      <a class="category" href="#nouveautes"><span>🆕</span>Nouveautés<small>Singles, albums, clips…</small></a>
+    </div>
+  </section>
+  <div class="content">
+    <section id="actualites">
+      <div class="section-title"><h2>📰 Actualités musicales</h2></div>
+      <div class="articles" id="articleList">
+        <article class="card searchable"><div class="thumb">🎙️</div><div class="card-copy"><span class="pill">Artistes</span><h3>Présentez ici votre première actualité</h3><p>Écrivez un résumé clair, vérifiez les informations et indiquez la source de l'article.</p><small class="muted">Exemple de contenu</small></div></article>
+        <article class="card searchable"><div class="thumb">🎸</div><div class="card-copy"><span class="pill">Scène musicale</span><h3>Les artistes à suivre cette semaine</h3><p>Une rubrique pour faire découvrir les talents émergents et les nouvelles tendances.</p><small class="muted">Exemple de contenu</small></div></article>
+        <article class="card searchable" id="nouveautes"><div class="thumb">💿</div><div class="card-copy"><span class="pill">Nouveautés</span><h3>Les sorties musicales de la semaine</h3><p>Ajoutez les titres, albums et clips qui viennent de sortir, avec des liens officiels.</p><small class="muted">Exemple de contenu</small></div></article>
+        <article class="card searchable" id="videos"><div class="thumb">▶️</div><div class="card-copy"><span class="pill">Vidéos</span><h3>Les clips et interviews à découvrir</h3><p>Intégrez des vidéos officielles ou des interviews avec l'autorisation nécessaire.</p><small class="muted">Exemple de contenu</small></div></article>
+      </div>
+    </section>
+    <aside>
+      <div class="section-title"><h2>🎵 Les genres</h2></div>
+      <div class="rankings">
+        <div class="rank"><div class="song"><strong>Rap / Hip-hop</strong><small>Actualités et sorties</small></div>🎤</div>
+        <div class="rank"><div class="song"><strong>Pop & R&B</strong><small>Artistes internationaux</small></div>✨</div>
+        <div class="rank"><div class="song"><strong>Afrobeats & Amapiano</strong><small>Les tendances africaines</small></div>🌍</div>
+        <div class="rank"><div class="song"><strong>Rumba & gospel</strong><small>Scène congolaise</small></div>🇨🇩</div>
+        <div class="rank"><div class="song"><strong>Rock, jazz, classique</strong><small>Et bien plus encore</small></div>🎼</div>
+      </div>
+      <div class="notice">Important : ceci est une première maquette. Les articles, photos, vidéos et classements sont des exemples. Il faudra les remplacer par des informations vérifiées et utiliser uniquement des images et médias autorisés.</div>
+    </aside>
+  </div>
+</main>
+<footer><div class="wrap"><div class="logo">♫ HIT <span>MUSIQUE</span></div><p>Toute la musique, toute l'actualité !</p><p>© Hit Musique — Projet en construction.</p></div></footer>
+<script>
+const search = document.getElementById('search');
+search.addEventListener('input', () => {
+  const term = search.value.toLocaleLowerCase('fr').trim();
+  document.querySelectorAll('.searchable').forEach(card => {
+    card.style.display = card.innerText.toLocaleLowerCase('fr').includes(term) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>
