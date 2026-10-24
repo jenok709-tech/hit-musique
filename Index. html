@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HIT MUSIQUE - L'actualité musicale</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: #e50914;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 45px 20px;
+            text-align: center;
+            background: #252525;
+        }
+
+        .hero h2 {
+            color: #ff3030;
+            font-size: 28px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border-left: 4px solid #e50914;
+        }
+
+        .card h3 {
+            color: #ff4545;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e50914;
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            color: #bbb;
+        }
+
+        a {
+            color: #ff5555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎵 HIT MUSIQUE</h1>
+        <p>Le rendez-vous des passionnés de musique !</p>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#actualites">Actualités</a>
+        <a href="#artistes">Artistes</a>
+        <a href="#hits">Top Hits</a>
+    </nav>
+
+    <section class="hero" id="accueil">
+        <h2>Bienvenue sur HIT MUSIQUE !</h2>
+        <p>Découvre les artistes, les nouveautés et les tendances musicales.</p>
+        <span class="badge">Toute l'actualité musicale</span>
+    </section>
+
+    <main class="container">
+
+        <section id="actualites">
+            <h2>🔥 Actualités musicales</h2>
+
+            <article class="card">
+                <h3>Les nouveautés musicales</h3>
+                <p>
+                    Retrouve ici les dernières sorties, les nouveaux
+                    singles et les albums de tes artistes préférés.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>🎤 À la découverte des artistes</h3>
+                <p>
+                    Découvre les talents émergents et les grandes
+                    stars de la scène musicale africaine.
+                </p>
+            </article>
+        </section>
+
+        <section id="artistes">
+            <h2>🌟 Artistes à suivre</h2>
+
+            <div class="card">
+                <h3>Musique congolaise</h3>
+                <p>
+                    Découvre les artistes de la RDC, leurs actualités
+                    et leurs nouvelles chansons.
+                </p>
+            </div>
+        </section>
+
+        <section id="hits">
+            <h2>🏆 Le Top Hits</h2>
+
+            <div class="card">
+                <h3>Les chansons du moment</h3>
+                <p>
+                    Une sélection des chansons populaires et des
+                    titres à découvrir.
+                </p>
+                <p>Le classement sera bientôt disponible !</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 HIT MUSIQUE</p>
+        <p>La musique nous rassemble 🎶</p>
+    </footer>
+
+</body>
+</html>
